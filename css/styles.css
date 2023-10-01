@@ -78,6 +78,9 @@ h3{
 
 .primary-btn{
     padding: 0.75rem 1.12rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.375rem;
     color: var(--Base);
     background-color: var(--primary-600);
     border-radius: 0.375rem;
@@ -258,6 +261,10 @@ h3{
     width: 45.5%;
 }
 
+.tools-section .header-component .small-screen-title{
+    display: none;
+}
+
 .tools-section .header-component h3{
     color: var(--gray-700);
 }
@@ -380,10 +387,6 @@ h3{
     letter-spacing: -0.04rem;
 }
 
-.signUp-section .primary-btn{
-    font-weight: 600;
-}
-
 .signUp-section .signup-btn{
     color: var(--primary-600);
     background-color: var(--Base);
@@ -400,6 +403,79 @@ h3{
     padding: 4rem 0;
     color: var(--neutral-800);
     background-color: var(--gray-950);
+}
+
+.page-footer nav{
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.page-footer .subscribe{
+    width: 24%;
+    order: 1;
+}
+
+.page-footer .col{
+    width: fit-content;
+}
+
+.list-1{
+    order: 2;
+}
+.list-2{
+    order: 3;
+}
+.list-3{
+    order: 4;
+}
+
+.page-footer .subscribe p{
+    padding: 1rem 0;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.00625rem;
+}
+
+.page-footer .subscribe__email-area input{
+    color: var(--neutral-800);
+    background-color: var(--gray-600);
+}
+
+.page-footer .subscribe__email-area input::placeholder{
+    color: var(--neutral-800);
+}
+
+.page-footer .col{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.page-footer .col h4{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.00625rem;
+    color: var(--neutral-200);
+}
+
+.page-footer .col .nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.page-footer .col .nav-list li{
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.page-footer .copyrights{
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray-300);
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5rem;
 }
 /* Footer ==>END */
 
@@ -517,6 +593,30 @@ h3{
         display: inline-block;
         margin-left: 0.9rem;
     }
+
+    /* Footer */
+    .page-footer{
+        padding: 2.5rem 0;
+    }    
+
+    .page-footer nav{
+        padding-bottom: 2rem;
+    }
+
+    .page-footer .subscribe{
+        width: 85%;
+        padding-bottom: 4.25rem;
+    }
+
+    .list-1{
+        order: 4;
+    }
+    .list-2{
+        order: 2;
+    }
+    .list-3{
+        order: 3;
+    }
 }
 /* Medium Screen ==> END */
  
@@ -577,6 +677,18 @@ h3{
         width: 100%;
     }
 
+    .tools-section .header-component h3{
+        font-size: 1.25rem;
+    }
+
+    .tools-section .header-component .large-screen-title{
+        display: none;
+    }
+
+    .tools-section .header-component .small-screen-title{
+        display: block;
+    }
+
     /* Blog section */
     .blog-section{
         padding: 2rem 0;
@@ -608,6 +720,49 @@ h3{
     .signUp-section .login-btn{
         margin-top: 1rem;
         margin-left: 0;
+    }
+
+    /* Footer */
+    .page-footer{
+        padding: 2rem 0;
+    }    
+
+    .page-footer nav{
+        padding-bottom: 1.5rem;
+    }
+
+    .page-footer .subscribe{
+        width: 98%;
+        padding-bottom: 3.25rem;
+    }
+
+    .page-footer .subscribe__email-area{
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .page-footer .subscribe__email-area input{
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    .page-footer .subscribe__email-area a{
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+
+    .list-1{
+        order: 3;
+    }
+    .list-2{
+        order: 4;
+        margin-top: 1.5rem;
+    }
+    .list-3{
+        order: 2;
+    }
+
+    .page-footer .copyrights{
+        padding-top: 1.5rem;
     }
 }
 /* Small Screen ==> END */
