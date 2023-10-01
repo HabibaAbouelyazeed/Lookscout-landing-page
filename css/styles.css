@@ -123,6 +123,33 @@ h3{
 }
 
 /* Navbar ==>END */
+/* Hero section ==>START */
+.hero-section{
+    padding: 5rem 0 5.75rem;
+    text-align: center;
+}
+
+.hero-section .label{
+    color: var(--primary-600);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: -0.00625rem;
+    padding-bottom: 1rem;
+}
+
+.hero-section h1{
+    color: var(--gray-700);
+}
+
+.lg-screen-header{
+    padding: 0 28%;
+}
+
+.hero-section .other-header{
+    display: none;
+}
+/* Hero section ==>END */
 
 
 
@@ -139,11 +166,31 @@ h3{
         display: block;
         margin-left: auto;
     }
+
+    /* Hero Section */
+    .hero-section{
+        padding: 3rem 0 5.5rem;
+    }
+    .lg-screen-header{
+        display: none;
+    }
+    .hero-section .other-header{
+        display: block;
+    }
 }
 /* Medium Screen ==> END */
  
 /* Small Screen ==> START */
 @media (max-width: 375px){
-
+    h1{
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 2.75rem;
+        letter-spacing: -0.045rem;
+    }
+    /* Hero Section */
+    .hero-section{
+        padding: 2rem 0 2.5rem;
+    }
 }
 /* Medium Screen ==> END */
