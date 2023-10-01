@@ -1,5 +1,21 @@
 :root{
+    --primary-200 :#B1CCFB;
+    --primary-600: #437EF7;
+    --primary-900: #2B63D9;
+    --Base: #FFFFFF;
+    --neutral-100: #F8F9FB;
+    --neutral-200:#F9F9F9;
+    --neutral-600: #EAEBF0;
+    --neutral-800: #A5ACBA;
+    --gray-25: #919BA7;
+    --gray-50: #5F6D7E;
+    --gray-300:#2E3545;
+    --gray-600: #2C3444;
+    --gray-700: #272D37;
+    --gray-950: #151B28;
 
+    --Medium-screen-size: 768px;
+    --Small-screen-size: 375px;
 }
 
 *{
@@ -9,14 +25,125 @@
 }
 
 body{
-    
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Base);
 }
 
 a{
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 
 ul{
     list-style: none;
 }
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+    letter-spacing: -0.0325rem;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.625rem;
+    letter-spacing: -0.02rem;
+}
+
+h3{
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    letter-spacing: -0.01375rem;
+}
+
+.container{
+    width: 88.88%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primary-btn{
+    padding: 0.75rem 1.12rem;
+    color: var(--Base);
+    background-color: var(--primary-600);
+    border-radius: 0.375rem;
+}
+
+/* Navbar ==>START */
+.head-navbar{
+    padding: 1.25rem 0;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    border-bottom: 1px solid var(--neutral-600);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.head-navbar .row{
+    gap: 4rem;
+    align-items: center;
+}
+
+.navbar__navlist li a{
+    display: flex;
+}
+.navbar__navlist li a img{
+    padding-left: 0.75rem;
+}
+
+.navbar__navlist{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar__sign{
+    margin-left: auto;
+    color: var(--primary-600);
+}
+
+.navbar__sign .primary-btn{
+    margin-left: 1.5rem;
+}
+
+.burger-menu{
+    display: none;
+}
+
+/* Navbar ==>END */
+
+
+
+
+/************** Media **************/
+/* Medium Screen ==> START */
+@media (max-width: 768px){
+    /* NavBar */
+    .navbar__navlist, .navbar__sign{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        margin-left: auto;
+    }
+}
+/* Medium Screen ==> END */
+ 
+/* Small Screen ==> START */
+@media (max-width: 375px){
+
+}
+/* Medium Screen ==> END */
