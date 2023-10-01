@@ -67,6 +67,7 @@ h3{
 
 .container{
     width: 88.88%;
+    max-width: 80rem;;
     margin: 0 auto;
 }
 
@@ -150,6 +151,8 @@ h3{
 }
 
 /* Navbar ==>END */
+
+/* Main ==>START */
 /* Hero section ==>START */
 .hero-section{
     padding: 5rem 0 5.75rem;
@@ -356,6 +359,49 @@ h3{
     background-size: contain;
 }
 /* Blog section ==>END */
+/* Signup section ==>START */
+.signUp-section{
+    padding: 4rem 0;
+    background-color: var(--primary-900);
+    color: var(--Base);
+    text-align: center;
+}
+
+.signUp-section p{
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: -0.00625rem;
+}
+
+.signUp-section h2{
+    padding: 0.5rem 25% 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+}
+
+.signUp-section .primary-btn{
+    font-weight: 600;
+}
+
+.signUp-section .signup-btn{
+    color: var(--primary-600);
+    background-color: var(--Base);
+}
+
+.signUp-section .login-btn{
+    display: none;
+}
+/* Signup section ==>END */
+/* Main ==>END */
+
+/* Footer ==>START */
+.page-footer{
+    padding: 4rem 0;
+    color: var(--neutral-800);
+    background-color: var(--gray-950);
+}
+/* Footer ==>END */
 
 
 
@@ -456,6 +502,21 @@ h3{
     .blog-section .header-component{
         width: 48%;
     }
+
+    /* Signup section */
+    .signUp-section{
+        padding: 2.5rem 0;
+        order: 5;
+    }
+
+    .signUp-section h2{
+        padding: 0.5rem 0 2rem;
+    }
+
+    .signUp-section .login-btn{
+        display: inline-block;
+        margin-left: 0.9rem;
+    }
 }
 /* Medium Screen ==> END */
  
@@ -532,6 +593,21 @@ h3{
 
     .blog-section .header-component{
         width: 100%;
+    }
+
+    /* Signup Section */
+    .signUp-section{
+        padding: 2rem 0;
+        order: 5;
+    }
+
+    .signUp-section .primary-btn{
+      width: 100%;
+    }
+
+    .signUp-section .login-btn{
+        margin-top: 1rem;
+        margin-left: 0;
     }
 }
 /* Small Screen ==> END */
